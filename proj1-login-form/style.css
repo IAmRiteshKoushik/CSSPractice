@@ -31,7 +31,7 @@ body{
     font-size: 16px;
     font-weight: 400;
     line-height: 1.8;
-    color: #333333;
+    color: var(--white-color);
 }
 
 a{
@@ -50,7 +50,7 @@ a{
 }
 
 .form-wrapper{
-    /* Invokign CSS-Flexbox. This allows
+    /* Invoking CSS-Flexbox. This allows
     us powerful alignment capabilities.
     Content is displayed in form of containers
     and they are treated as arrays inside
@@ -68,7 +68,6 @@ a{
     position: absolute;
     width: 100%;
     height: 100%;
-
     /* The image is clipped in-order to 
     fit in the screen without changing the
     size or the aspect-ratio */
@@ -81,14 +80,17 @@ a{
     width: 100%;
     padding: 2em;
     text-align: center; 
-    background-color: var(--white-color);
+    background-color: rgb(255 255 255 / 3%);
+    border: 1px solid rgb(255 255 255 / 15%);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     border-radius: var(--radius);
 }
 
 form > div{
     position: relative;
     margin: 2em 0;
-
+    
 }
 
 /* We are writing CSS rules for input fields
@@ -99,8 +101,11 @@ form div:not(.checkbox) input{
     width: 100%;
     height: 50px;
     padding: 0 1em;
-    border: var(--radius);
+    border-radius: var(--radius);
     background-color: transparent;
+    border: 1px solid rgb(255 255 255 / 15%);
+    color: var(--white-color);
+    transition: border-color .3s;
 }
 
 form div:not(.checkbox) :where(label, i){
@@ -108,7 +113,7 @@ form div:not(.checkbox) :where(label, i){
     top: 50%;
     left: 1em;
     transform: translateY(-50%);
-
+    transition: top .3s, font-size .3s, color .3s;
 }
 
 /* Targetting the tags which contain the icons
@@ -116,4 +121,100 @@ for username and password */
 form div:not(.checkbox) i {
     right: 1em;
     left: auto;
+}
+
+/* Movement of the "username" and "password" text pieces to
+above the input field. */
+form div:not(.checkbox) input:focus ~ label, 
+form div:not(.checkbox) input:not(:placeholder-shown):not(:focus) ~ label {
+    top: -10px;
+    font-size: 13px;
+    color: var(--primary-color);
+}
+
+form div:not(.checkbox) input:focus, 
+form div:not(.checkbox) input:not(:placeholder-shown):not(:focus){
+    border-color: rgb(255, 255, 255 / 30%);
+}
+
+form .checkbox {
+    text-align: left;
+    margin-top: -1.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+form .checkbox label {
+    font: 14px;
+}
+
+form .checkbox input {
+    appearance: none;
+    /* Webkit Appearence is a NON-STANDARD property which 
+    should preferably not be used. */
+    /* -webkit-appearance: none; */
+    margin: 0;
+    position: relative;
+    width: 1em;
+    height: 1em;
+    border: 1px solid rgb(255 255 255 / 15%);
+    border-radius: var(--radius);
+
+}
+
+form .checkbox input::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.6);
+    width: 8px;
+    height: 8px;
+    background-color: rgb(255 255 255 / 15%);
+    border-radius: var(--radius);
+    transition: transform .3s, background-color .3s, border-color .3s;
+}
+
+form .checkbox input:checked {
+    border-color: var(--primary-color);
+}
+
+form .checkbox input:checked::before{
+    background-color: var(--primary-color);
+    transform: translate(-50%, -50%) scale(1);
+}
+
+input, button {
+    font-size: inherit;
+}
+
+form div button {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: var(--radius);
+    transition: background-color .3s;
+}
+
+button:hover{
+    background-color: #90465f;
+
+}
+
+form .split {
+    /* Initializing flex-box setup */
+    display: flex;
+    /* Takes up all the space on the line by adding space
+    in between them */
+    justify-content: space-between;
+
+}
+
+form .split a:hover{
+    text-decoration: underline;
+
 }
