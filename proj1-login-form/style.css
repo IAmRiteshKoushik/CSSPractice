@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+:root{
+
+    /* Declaring global CSS variables */
+    --primary-color: #ed5967;
+    --white-color: #ffffff;
+    --radius: 8px;
+}
+
+*{
+    /* Removing any forms of margins and 
+    paddings that some of the modern day 
+    browsers tend to add by themselves */
+    margin: 0;
+    padding: 0;
+}
+
+*, ::before, ::after{
+    /* When we add in a border box, the size
+    of it stays the same as what has been 
+    described in the height and width limits
+    and is not subjected to change due to 
+    padding issues. The box would rather accomodate
+    the text differnently than expand by itself. */
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #333333;
+}
+
+a{
+    /* We carry out the text decoration when
+    do not want any unspecified color changes
+    to happen to the hyperlinks  */
+    text-decoration: none;
+    /* With hyperlinks we want the font color
+    to be inherited from the color of the text
+    we specify in the div. Every div would have
+    a different color specified to it hence
+    adding this property would allow us 
+    to directly inherit the property without
+    having to write explicit CSS each time. */
+    color: inherit;
+}
+
+.form-wrapper{
+    /* Invokign CSS-Flexbox. This allows
+    us powerful alignment capabilities.
+    Content is displayed in form of containers
+    and they are treated as arrays inside
+    the flexbox. Also, helps with reponsiveness */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-wrapper img{
+    /* Adding an absolute position makes the 
+    location of the image constant/immovable
+    throughout the screen */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    /* The image is clipped in-order to 
+    fit in the screen without changing the
+    size or the aspect-ratio */
+    object-fit: cover;
+}
+
+.login{
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    padding: 2em;
+    text-align: center; 
+    background-color: var(--white-color);
+    border-radius: var(--radius);
+}
+
+form > div{
+    position: relative;
+    margin: 2em 0;
+
+}
+
+/* We are writing CSS rules for input fields
+inside out div which are not carrying the classname 
+.checkbox ; hence the pseudo-class selector*/
+form div:not(.checkbox) input{
+    outline: 0;
+    width: 100%;
+    height: 50px;
+    padding: 0 1em;
+    border: var(--radius);
+    background-color: transparent;
+}
+
+form div:not(.checkbox) :where(label, i){
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    transform: translateY(-50%);
+
+}
+
+/* Targetting the tags which contain the icons
+for username and password */
+form div:not(.checkbox) i {
+    right: 1em;
+    left: auto;
+}
