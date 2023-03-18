@@ -19,7 +19,94 @@ body {
     position: relative;
     width: 320px;;
     height: 450px;
-    background-color: #fff;
     border-radius: 20px;
-    box-shadow: 0 15px 35px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgbd(0, 0, 0, 0.25);
+}
+
+.card .poster{
+    /* Position realtive allows us */
+    position: relative;
+    /* In case the content is more that the space available
+    for the element, scrollbars appear within the element
+    in order to allow visibility of text. In case, we make it
+    "hidden", it would not remain scrollable and the content is
+    clipped.
+    (Refer W3 Schools for further reference) */
+    overflow: hidden;
+}
+
+/* The before pseudo-class selector allows some form 
+of content to be added before the actual card. */
+.card .poster::before {
+    content: '';
+    position: absolute;
+    /* We do not want the linear gradient to come up by default
+    but work as a part of the transition. */
+    bottom: -180px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #1064a6 50%, transparent);
+    transition: 0.5s;
+    /* Higher the z-index, higher is the priority of the element
+    to be displayed in case of overlapping elements.  */
+    z-index: 1;
+}
+
+.card:hover .poster::before{
+    bottom: 0px;
+}
+
+.card .poster img{
+    /* Takes up the entire width of the parent element */
+    width: 100%;
+    /* Any form of animation or transition takes half a second 
+    for giving a smooth outlook */
+    transition: 0.5s;
+}
+
+.card:hover .poster img{
+    transform: translateY(-50px);
+    filter: blur(5px);
+}
+
+.card .details{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+    transition: 0.5s;
+
+}
+
+.card:hover .details{
+    /* On hovering, the image moves from bottom = 0 to
+    bottom = 40px which appears as a transition */
+    bottom: 40px;
+}
+
+.card .details .logo {
+   max-width: 180px;
+}
+
+.card .details h3 {
+    font-size: 0.8em;
+    color: #fff;
+
+}
+
+.card .details .rating{
+    position: relative;
+    padding: 5px 0;
+}
+
+.card .details .rating .fa-star{
+    color: #f7f406;
+    font-size: 1em;
+}
+
+.card .details .rating span {
+    color: #fff;
 }

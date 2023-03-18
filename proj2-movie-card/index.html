@@ -5,12 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Card UI Design</title>
+    <!-- Getting Font Awesome Icons for the webpage -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link to stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="card">
+        <!-- Poster -->
         <div class="poster">
-            <img src="poster.jpg" alt="">
+            <img src="assets/poster.jpg" alt="Movie Poster">
+        </div>
+        <!-- Movie details -->
+        <div class="details">
+            <!-- Movie logo -->
+            <img src="assets/avtarlogo.png" alt="logo" class="logo">
+            <!-- Movie Director details -->
+            <h3>Directed by James Cameron</h3>
+            <!-- Movie rating (star icons) -->
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>4/5</span>
+            </div>
+            <!-- Movie Description -->
         </div>
     </div>
 </body>
