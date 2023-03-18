@@ -72,7 +72,7 @@ of content to be added before the actual card. */
 
 .card .details{
     position: absolute;
-    bottom: 0;
+    bottom: -170px;
     left:0;
     padding: 20px;
     width: 100%;
@@ -84,7 +84,7 @@ of content to be added before the actual card. */
 .card:hover .details{
     /* On hovering, the image moves from bottom = 0 to
     bottom = 40px which appears as a transition */
-    bottom: 40px;
+    bottom: 0px;
 }
 
 .card .details .logo {
@@ -130,3 +130,38 @@ of the span tag to create a different color. */
     background: #ff5722;
 }
 
+.card .details .info {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.card .details .cast {
+    /* Relative positioning allows the contents to move with transition */
+    position: relative;
+}
+
+.card .details .cast h4{
+    color: #fff;
+    margin-top: 10px;
+}
+
+.card .details .cast ul{
+    position: relative;
+    /* Makes it horizontal */
+    display: flex;
+    margin-top: 10px;
+}
+
+.card .details .cast ul li{
+    list-style: none;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.card .details .cast ul li img{
+    max-width: 100%;
+
+}
