@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="site">
+        <div class="header">
+            <span>Checklist Form</span>
+        </div>
+        <!-- Personal Section -->
+        <div class="personal">
+            <div class="section-header">
+                Your Personal
+            </div>
+            <div class="content">
+                <!-- Name, Unit No, Street No and Street Name -->
+                <div class="line1">
+                    <div class="name">
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="unitno">
+                        <label for="unit">Unit No.
+                        </label><br>
+                        <input type="number" name="unitno" id="unitno">
+                    </div>
+                    <div class="streetno">
+                        <label for="street">Street No.</label><br>
+                        <input type="number" name="streetno" id="streetno">
+                    </div>
+                    <div class="street">
+                        <label for="street">Street</label><br>
+                        <input type="text" name="street" id="street">
+                    </div>
+                </div>
+                <!-- DOB, Gender, Town, State, PostCode-->
+                <div class="line2">
+                    <div class="dob">
+                        <label for="dob">Date of birth</label><br>
+                        __/__/__
+                    </div>
+                    <div class="town">
+                        <label for="town">Town/City/Suburb</label><br>
+                        <input type="text" name="" id="town">
+                    </div>
+                    <div class="state">
+                        <label for="state">State</label><br>
+                        <input type="text" name="" id="state">
+                    </div>
+                    <div class="postcode">
+                        <label for="Post">Post Code</label><br>
+                        <input type="text" id="Post">
+                    </div>
+                </div>
+                <!-- Nationality and Country -->
+                <div class="line3">
+                    <div class="nationality">
+                        <label for="nationality">Nationality</label>
+                        <input type="text" name="nationality" id="nationality">
+                    </div>
+                    <div class="country">
+                        <label for="country">Country</label>
+                        <input type="text" name="country" id="country">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Deployment Section -->
+        <div class="main">
+            <div class="main-section-header">
+                DEPLOYMENT
+            </div>
+            <div class="body">
+                <div class="objectives">
+                    <p>
+                    OBJECTIVE                       
+                    </p>
+                </div>
+                <div class="questions">
+                    <div class="qs">
+                        <div class="number">1.</div>
+                        <div class="text">Putting your strategy into action is
+                            how your marketing plan should work.
+                        </div>
+                        <div class="yes">
+                            <input type="checkbox" name="qs1" id="yes1">
+                            <label for="yes1">Yes</label>
+                        </div>
+                        <div class="no">
+                            <input type="checkbox" name="qs1" id="no1">
+                            <label for="no1">No</label>
+                        </div>
+                    </div>
+                    <div class="qs">
+                        <div class="number">2.</div>
+                        <div class="text">The objectives will be based on how you
+                            gain sales by acquiring and keeping customers.
+                        </div>
+                        <div class="yes">
+                            <input type="checkbox" name="qs2" id="yes2">
+                            <label for="yes2">Yes</label>
+                        </div>
+                        <div class="no">
+                            <input type="checkbox" name="qs2" id="no2">
+                            <label for="no2">No</label>
+                        </div>
+                    </div>
+                    <div class="qs">
+                        <div class="number">3.</div>
+                        <div class="text">Marketing strategy's goal is to increase sales and achieve
+                            advantage over other competitions.
+                        </div>
+                        <div class="yes">
+                            <input type="checkbox" name="qs3" id="yes3">
+                            <label for="yes3">Yes</label>
+                        </div>
+                        <div class="no">
+                            <input type="checkbox" name="qs3" id="no3">
+                            <label for="no3">No</label>
+                        </div>
+                    </div>
+                    <div class="qs">
+                        <div class="number">4.</div>
+                        <div class="text">It is a process to allow an organization to focus
+                            resources on the greatest opportunities ot  increase sales and
+                            achieve the company's target.
+                        </div>
+                        <div class="yes">
+                            <input type="checkbox" name="qs4" id="yes4">
+                            <label for="yes4">Yes</label>
+                        </div>
+                        <div class="no">
+                            <input type="checkbox" name="qs4" id="no4">
+                            <label for="no4">No</label>
+                        </div>
+                    </div>
+                    <div class="qs">
+                        <div class="number">5</div>
+                        <div class="text">You should consider on thnking what your customers
+                            need you to be.
+                        </div>
+                        <div class="yes">
+                            <input type="checkbox" name="yes" id="yes5">
+                            <label for="yes5">Yes</label>
+                        </div>
+                        <div class="no">
+                            <input type="checkbox" name="yes" id="no5">
+                            <label for="no5">No</label>
+                        </div>
+                    </div>
+                    <div class="qs">
+                        <div class="number">6.</div>
+                        <div class="text">It should have the details on how your sales are followed
+                            up and the activities your doing to develop your offers.
+                        </div>
+                        <div class="yes">
+                            <input type="checkbox" name="yes" id="yes6">
+                            <label for="yes6">Yes</label>
+                        </div>
+                        <div class="no">
+                            <input type="checkbox" name="yes" id="nof">
+                            <label for="nof">No</label>
+                        </div>
+                    </div>
+                    <div class="qs">
+                        <div class="number">7.</div>
+                        <div class="text">The marketing plan should be innovative.</div>
+                        <div class="yes">
+                            <input type="checkbox" name="yes" id="yes7">
+                            <label for="yes7">Yes</label>
+                        </div>
+                        <div class="no">
+                            <input type="checkbox" name="yes" id="no7">
+                            <label for="no7">No</label>
+                        </div>
+                    </div>
+                    <div class="qs">
+                        <div class="number">8.</div>
+                        <div class="text">You should consider on thinking what your customers 
+                            need you to be.</div>
+                        <div class="yes">
+                            <input type="checkbox" name="yes" id="yes6">
+                            <label for="yes6">Yes</label>
+                        </div>
+                        <div class="no">
+                            <input type="checkbox" name="yes" id="no6">
+                            <label for="no6">No</label>
+                        </div>
+                    </div>
+                    <div class="qs">
+                        <div class="number">9.</div>
+                        <div class="text">The strategy of branding you have should be consistent, 
+                            becasue it leads to a strong brand equity</div>
+                        <div class="yes">
+                            <input type="checkbox" name="yes" id="yes9">
+                            <label for="yes9">Yes</label>
+                        </div>
+                        <div class="no">
+                            <input type="checkbox" name="yes" id="no9">
+                            <label for="no9">No</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Terms and Conditions Section -->
+        <div class="tnc">
+            <div class="col1">
+                <p>
+                    <span>Terms and Conditions</span><br>
+                    Improvement should be measured regularly and assessed in 
+                    order for you to know what is beneficial and what is not. 
+                    This will help you set new targets. 
+                </p>
+            </div>
+            <div class="col2">
+                <label for="sign">Signature</label><br>
+                <input type="text" name="sign" id="sign"><br>
+                <label for="date">Date:</label>
+                <input type="text" name="date" id="date">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

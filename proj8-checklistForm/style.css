@@ -1,0 +1,152 @@
+:root{
+    --dark: darkblue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+
+}
+
+.site{
+    margin: 20px 20%;
+    border: 1px solid var(--dark);
+    color: var(--dark);
+}
+
+/* Header Style */
+.header{
+    margin-top: 2px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.header span{
+    font-weight: 700;
+    font-size: 60px;
+    color: var(--dark);
+}
+
+/* Personal Section Style */
+.personal{
+    border: 2px solid var(--dark);
+    margin: 20px 30px;
+}
+
+.section-header{
+    background-color: var(--dark);
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Common CSS for 3 lines under the personal section */
+.line1, .line2, .line3{
+    display: flex;
+    margin: 5px 20px;
+}
+
+.nationality, .country{
+    width: 50%;
+}
+
+/* CSS for Deployment Section */
+.main{
+    margin: 40px 30px;
+
+}
+
+.main-section-header{
+    border: 5px solid lightblue;
+    background-color: var(--dark);
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+}
+
+
+.body{
+    border: 2px solid var(--dark);
+    display: flex;
+    font-weight: 600;
+}
+
+.objectives{
+    background: var(--dark);
+    color: #fff;
+    align-items: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.objectives p{
+    border: 2px solid #fff;
+    font-size: 20px;
+    transform: rotate(90deg);
+}
+
+.qs{
+    border: 1px solid var(--dark);
+    display: flex;
+    padding: 10px 5px;
+}
+
+.qs > .number{
+    width: 20px;
+}
+
+.qs > .text{
+    width: 80%;
+    padding-right: 30px;
+}
+
+.qs > .yes, .qs > .no{
+    align-items: flex-end;
+    padding: 2px 5px;
+    width: 10%;
+}
+
+/* Terms and Conditions */
+.tnc{
+    margin: 40px 30px;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.col1, .col2{
+    border: 2px solid;
+}
+
+.col1{
+    width: 100%;
+}
+
+.col1 p{
+    color: var(--dark);
+    font-weight: 400;
+    width: 75%;
+}
+
+.col1 p span{
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.col2{
+    width: 40%;
+}
+
+.col2 label{
+    color: var(--dark);
+    padding: 5px;
+}
+
+.col2 input{
+    margin: 10px;
+}
