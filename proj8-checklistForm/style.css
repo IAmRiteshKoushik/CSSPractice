@@ -16,6 +16,11 @@
     color: var(--dark);
 }
 
+input{
+    margin: 1px;
+    border: 2px solid var(--dark);
+}
+
 /* Header Style */
 .header{
     margin-top: 2px;
@@ -46,13 +51,40 @@
 /* Common CSS for 3 lines under the personal section */
 .line1, .line2, .line3{
     display: flex;
+    justify-content: space-around;
     margin: 5px 20px;
 }
 
 .nationality, .country{
     width: 50%;
 }
+/* Line 1 */
+.name{
+    width: 39%;
+}
 
+.name input{
+    width: 70%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.unitno input, .streetno input, .street input{
+    width: 99%
+    
+}
+/* Line 2 */
+.gender{
+    margin-right: 60px;
+}
+/* Line 3 */
+#nationality{
+    width: 50%;
+}
+
+#country{
+    width: 80%;
+}
 /* CSS for Deployment Section */
 .main{
     margin: 40px 30px;
@@ -80,16 +112,19 @@
     background: var(--dark);
     color: #fff;
     align-items: center;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    writing-mode: vertical-lr;
 }
 
 .objectives p{
-    border: 2px solid #fff;
-    font-size: 20px;
-    transform: rotate(90deg);
+    text-align: center;
+    font-weight: 200;
+    font-size: 8px;
 }
 
+.objectives p span{
+    font-size: 16px;
+    font-weight: 600;
+}
 .qs{
     border: 1px solid var(--dark);
     display: flex;
@@ -113,18 +148,15 @@
 
 /* Terms and Conditions */
 .tnc{
-    margin: 40px 30px;
+    margin: 20px 30px;
+    margin-bottom: 50px;
     display: flex;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.col1, .col2{
-    border: 2px solid;
-}
-
 .col1{
-    width: 100%;
+    width: 90%;
 }
 
 .col1 p{
@@ -148,5 +180,22 @@
 }
 
 .col2 input{
-    margin: 10px;
+    margin: 5px;
+}
+
+/* Targetting last two sign and date input fields fields */
+#sign{
+    padding: 4px 5px;
+    color: #000;
+    font-weight: 600;
+    background: rgb(174, 168, 168);
+    width: 250px;
+    border: none;
+}
+
+#date{
+    padding: 4px 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--dark);
 }

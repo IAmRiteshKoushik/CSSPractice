@@ -1,0 +1,198 @@
+:root{
+    --red: rgb(227, 52, 52);
+    --green: rgb(3, 96, 54);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+
+}
+
+.site{
+    margin: auto;
+    margin-top: 20px;
+    width: 60%;
+    border: 3px solid var(--green);
+}
+
+.header{
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main-heading{
+    background: var(--green);
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 2px 20px;
+
+}
+
+hr{
+    width: 95%;
+    margin: auto;
+    border: 1px solid var(--red);
+}
+/* Personal Details Section */
+.main-section{
+    display: flex;
+    padding: 20px;
+    border: 2px solid #000;
+}
+
+.detail-fields-1{
+
+    width: 80%;
+}
+
+.detail-fields-2{
+    width: 20%;
+}
+
+.detail-fields-1 .style1{
+    border: 0;
+    outline: 0;
+    border-top: 2px solid var(--red);
+    /* border-right: 2px solid var(--red); */
+    border-bottom: 2px solid var(--red);
+    width: 300px;
+}
+
+#extra1, #extra2{
+    border-left: 2px solid var(--red);
+}
+
+.detail-fields-2 input{
+    margin: 0;
+    width: 40px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid var(--red);
+
+}
+/* Status */
+.status-content{
+    display: flex;
+}
+
+.note{
+    margin: 5px 20px
+}
+/* Income */
+.income{
+    border: 2px solid var(--green);
+    display: flex;
+}
+/* Exemptions */
+.excemptions{
+    border: 2px solid var(--green);
+    display: flex;
+}
+
+#table1 td{
+    border: 2px solid gray;
+    height: 20px;
+    text-align: center;
+}
+
+/* Payments */
+.payments{
+    border: 2px solid var(--green);
+    display: flex;
+}
+
+.heading{
+    width: 25%;
+    text-align: center;
+    padding-top: 10px ;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.content{
+    width: 75%;
+    padding: 10px;
+}
+
+.content input{
+    width: 95%;
+    padding: 10px;
+    font-size: 12px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid gray;
+}
+
+#premium1, #premium2{
+    border: 0;
+}
+
+/* Sign Here */
+.sign-here{
+    display: flex;
+}
+
+.instructions{
+    width: 20%;
+    margin: 10px;
+}
+
+.warning{
+    padding: 5px;
+    color: var(--red);
+    margin-left: 210px;
+}
+
+.table{
+    width: 77%;
+    margin: 2px;
+}
+
+table{
+    /* border: 1px solid var(--red); */
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+td{
+    border: 2px solid var(--red);
+}
+
+
+
+.col1{
+    height: 60px;
+    width: 35%;
+    vertical-align: top;
+    padding: 5px 2px;
+}
+
+.col2{
+    height: 60px;
+    width: 7%;
+    vertical-align: top;
+    padding: 5px 2px;
+}
+
+.col3{
+    height: 60px;
+    width: 30%;
+    vertical-align: top;
+    padding: 5px 2px;
+}
+
+.col4{
+    height: 60px;
+    width: 20%;
+    vertical-align: top;
+    padding: 5px 2px;
+}
+
+#odd{
+    background: rgb(197, 193, 193);
+}

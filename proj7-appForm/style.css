@@ -1,0 +1,66 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root{
+    --dark: #6485a4;
+    --light: #e2eefa;
+    --medium: #9dc6dc;
+    --box: #5590a6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+/* Center a div */
+.overview{
+    text-align: center;
+    font-weight: 600;
+    font-size: 72px;
+}
+
+/* General CSS*/
+.general, .health-cover, .policy{
+    border: 5px solid #000;
+    padding: 10px 10px;
+    background: var(--light);
+}
+
+
+/* Section Headers */
+.header{
+    padding: 7px;
+    margin: 20px 30px;
+    margin-right: 70px;
+    display: flex;
+    background: var(--dark);
+}
+
+.header .heading{
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* Section Content */
+.content{
+    margin: 20px 30px;
+    margin-right: 70px;
+    padding-left: 20px;
+}
+
+/* Footer Section */
+/* .footer{
+     
+} */
+
+.footer .page{
+    background-color: var(--light);
+    text-align: center;
+    font-weight: 200;
+    font-size: 14px;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Refund Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="site">
+        <div class="header">
+            Tax Refund Form
+        </div>
+        <div class="personal">
+            <div class="main-heading">
+                Personal Details
+            </div>
+            <div class="main-section">
+                <div class="detail-fields-1">
+                    <input type="text" class="style1" placeholder="Your first name and initial">
+                    <input type="text" class="style1" id="extra1" placeholder="Last name"><br>
+                    <input type="text" class="style1" placeholder="Nationality">
+                    <input type="text" class="style1" id="extra2" placeholder="Phone Number"><br>
+                    <input type="text" placeholder="Address( street and number), see instructions">
+                    <input type="text" placeholder="No"><br>
+                    <input type="text" placeholder="City, town, street and ZIP code, see instructions.">
+                </div>
+                <div class="detail-fields-2">
+                    <p>Number 1</p>
+                    <div class="tri-box">
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                    </div>
+                    <p>Number 2</p>
+                    <div class="tri-box">
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            
+            <hr> <!-- Horizontal Separation in Personal Details section-->
+            <div class="status-content">
+                <div class="heading">
+                    Status
+                </div>
+                <div class="marriage-status">
+                    <input type="checkbox" name="marriage" id="single">
+                    <label for="single">Single</label>
+                    <input type="checkbox" name="marriage" id="divorced">
+                    <label for="divorced">Divorced</label><br>
+                    <input type="checkbox" name="marriage" id="married">
+                    <label for="married">Married</label>
+                    <input type="checkbox" name="marriage" id="others">
+                    <label for="others">Others</label>
+                </div>
+            </div>
+            <p class="note">Check only <br>one box.</p>
+        </div>
+
+        <!-- Income Sections -->
+        <div class="income">
+            <div class="heading">
+                Income
+            </div>
+            <div class="content">
+                <input type="text" placeholder="1. It is a process to allow an organization to focus resources on the greatest."><br>
+                <input type="text" id="premium1" placeholder="2. The objectives will be based on how you gain sales by acqurining and keeping customers."><br>
+            </div>
+        </div>
+
+        <!-- Excemptions Section -->
+        <div class="excemptions">
+            <div class="heading">
+                Exemptions
+            </div>
+            <div class="content">
+                <table id="table1">
+                    <!-- T-Head -->
+                    <tr>
+                        <td>
+                            <span>Dependents</span><br>
+                            First Name &nbsp;&nbsp;&nbsp;&nbsp; Last Name
+
+                        </td>
+                        <td>
+                            Dependent's social <br>
+                            security number
+                        </td>
+                        <td>
+                            Dependent's relationships <br>
+                            to you
+                        </td>
+                        <td>
+                            If child is under age 17 <br>
+                            qualifying for child tax credit
+                        </td>
+                    </tr>
+                    <!-- T-Body -->
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" name="box" id="box1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" name="box" id="box2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" name="box" id="box3">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Payments Section -->
+        <div class="payments">
+            <div class="heading">
+                Payments
+            </div>
+            <div class="content">
+                <input type="text" placeholder="1. Federal income tax withheld from."><br>
+                <input type="text" placeholder="2. Amount paid with request for extension to file"><br>
+                <input type="text" placeholder="3. Credit for federal tax on fuels."><br>
+                <input type="text" placeholder="4. Amount paid with request for extension to file."><br>
+                <input type="text" placeholder="5. Net premium tax credit." id="premium2"><br>
+            </div>
+        </div>
+
+        <!-- Sign Here -> Section -->
+        <div class="sign">
+            <div class="main-heading">
+                Sign Here
+            </div>
+            <div class="warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Totam expedita quas aliquam quis quisquam maxime sunt iste aliquid mollitia. 
+                Eius nulla harum culpa facilis provident dicta ipsam atque inventore voluptate.
+            </div>
+            <div class="sign-here">
+                <div class="instructions">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ullam quis aliquam quas dolorum
+                </div>
+                <div class="table">
+                    <table>
+                        <!-- Table Row 1 -->
+                        <tr>
+                            <td class="col1">Your signature</td>
+                            <td class="col2">Date</td>
+                            <td class="col3">Your occupation</td>
+                            <td class="col4">Daytime phone number</td>
+                        </tr>
+                        <!-- Table Row 2 -->
+                        <tr>
+                            <td class="col1">Spouse's Signature</td>
+                            <td class="col2">Date</td>
+                            <td class="col3">Spouse's Occupation</td>
+                            <td class="col4" id="odd"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
