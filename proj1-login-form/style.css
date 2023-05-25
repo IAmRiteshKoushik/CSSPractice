@@ -57,7 +57,7 @@ a{
     the flexbox. Also, helps with reponsiveness */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     height: 100vh;
 }
 
@@ -76,15 +76,20 @@ a{
 
 .login{
     position: relative;
+    margin-left: 80px;
     max-width: 400px;
     width: 100%;
     padding: 2em;
     text-align: center; 
-    background-color: rgb(255 255 255 / 3%);
-    border: 1px solid rgb(255 255 255 / 15%);
-    backdrop-filter: blur(15px);
+    background-color: rgb(255 255 255 / 10%);
+    border: 1px solid rgb(255 255 255 / 50%);
+    backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(15px);
     border-radius: var(--radius);
+}
+
+h1 {
+    color: var(--primary-color);
 }
 
 form > div{
